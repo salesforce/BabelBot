@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+#
+# Copyright (c) 2016, salesforce.com, inc.
+# All rights reserved.
+# Licensed under the BSD 3-Clause license. 
+# For full license text, see LICENSE.txt file in the repo root  or https://opensource.org/licenses/BSD-3-Clause
+#
+
+require "bundler/setup"
+require "protocol_droid"
+
+# You can add fixtures and/or initialization code here to make experimenting
+# with your gem easier. You can also use a different console, if you like.
+
+# (If you use this, don't forget to add pry to your Gemfile!)
+require "pry"
+Pry.start

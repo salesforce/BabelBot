@@ -1,0 +1,8 @@
+{
+  "googleAppName" : "Protocol Droid",
+  "fileId" : "xxxxSFU6l6Eovktv5IQyqJK_MiJjvkcoMj0plOHoxxxx",
+  "apiCachePath" : "tmp/drive.cache",
+  "credentialsCachePath" : "tmp/oauth2.json",
+  "twineFilePath" : "tmp/out.twine",
+  "projectLocalesPath" : "/path/to/project/locales/directory"
+}

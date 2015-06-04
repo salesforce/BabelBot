@@ -1,0 +1,9 @@
+/.bundle/
+/.yardoc
+/Gemfile.lock
+/_yardoc/
+/coverage/
+/pkg/
+/spec/reports/
+/tmp/
+client_secrets.json
