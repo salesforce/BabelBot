@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["ajwalters@gmail.com"]
 
   spec.summary       = %q{gem to generate localization string files from a Google Spreadsheet}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/salesforce/Protocol-Droid"
   spec.license       = "BSD 3-Clause"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
