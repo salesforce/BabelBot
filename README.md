@@ -1,17 +1,17 @@
-# Protocol Droid
+# Babel Bot
 
-Protocol Droid facilitates the collaboration between developers and content writers to provide application ready content across languages.  Developers and content providers share a Google spreadsheet where new keys can quickly be added and translations can be quickly modified.  A single executable can be run to pull down the content and convert it into the application required string file format.
+Babel Bot facilitates the collaboration between developers and content writers to provide application ready content across languages.  Developers and content providers share a Google spreadsheet where new keys can quickly be added and translations can be quickly modified.  A single executable can be run to pull down the content and convert it into the application required string file format.
 
-Protocol Droid relies heavily on the fantastic [twine](https://github.com/mobiata/twine) gem.  However, instead of sharing a Twine formatted file across applications, a Google spreadsheet is used for easier collaboration across departments and companies.
+Babel Bot relies heavily on the fantastic [twine](https://github.com/mobiata/twine) gem.  However, instead of sharing a Twine formatted file across applications, a Google spreadsheet is used for easier collaboration across departments and companies.
 
-Protocol droid has only been tested on iOS and Android projects, but should work with the other formats supported by the twine gem.
+Babel Bot has only been tested on iOS and Android projects, but should work with the other formats supported by the twine gem.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "protocol_droid"
+gem "babel_bot"
 ```
 
 And then execute:
@@ -53,7 +53,7 @@ Make sure all paths specified already exist.
 
 With your configuration in place, run
 
-    $ bundle exec protocol-droid generate-strings PATH_TO_CONFIG
+    $ bundle exec babel-bot generate-strings PATH_TO_CONFIG
 
 If you are using Bundler, you can run using `bundle exec` to eliminate the JSON version warnings caused by the Google API client.
 

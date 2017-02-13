@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 #
 # Copyright (c) 2016, salesforce.com, inc.
 # All rights reserved.
@@ -5,12 +7,7 @@
 # For full license text, see LICENSE.txt file in the repo root  or https://opensource.org/licenses/BSD-3-Clause
 #
 
-module ProtocolDroid
+require "bundler/setup"
+require "babel_bot"
 
-end
-
-require "protocol_droid/cli"
-require "protocol_droid/csv_loader"
-require "protocol_droid/runner"
-require "protocol_droid/twine_generator"
-require "protocol_droid/version"
+BabelBot::CLI.run

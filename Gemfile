@@ -7,5 +7,5 @@
 
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in protocol_droid.gemspec
+# Specify your gem's dependencies in babel_bot.gemspec
 gemspec

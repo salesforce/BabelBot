@@ -7,20 +7,20 @@
 
 require "slop"
 
-module ProtocolDroid
+module BabelBot
   class CLI
     def self.run
       @opts = Slop.parse(help: true) do
         on '-v', 'Print the version' do
-          puts "Version #{ProtocolDroid::VERSION}"
+          puts "Version #{BabelBot::VERSION}"
         end
 
         command "generate-strings" do
-          banner "Usage: protocol-droid generate-strings CONFIG_PATH"
+          banner "Usage: babel-bot generate-strings CONFIG_PATH"
           run do |opts, args|
             if args[0]
-              config = ProtocolDroid::CLI.load_config(args[0])
-              ProtocolDroid::Runner.new(config).generate_strings
+              config = BabelBot::CLI.load_config(args[0])
+              BabelBot::Runner.new(config).generate_strings
               exit
             end
           end

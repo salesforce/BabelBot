@@ -9,17 +9,17 @@
 
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'protocol_droid/version'
+require 'babel_bot/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "protocol_droid"
-  spec.version       = ProtocolDroid::VERSION
-  spec.authors       = ["Adam Walters"]
-  spec.email         = ["ajwalters@gmail.com"]
+  spec.name          = "babel_bot"
+  spec.version       = BabelBot::VERSION
+  spec.authors       = ["Nick Changnon"]
+  spec.email         = ["nchangnon@salesforce.com"]
 
   spec.summary       = %q{gem to generate localization string files from a Google Spreadsheet}
-  spec.homepage      = "https://github.com/salesforce/Protocol-Droid"
-  spec.license       = "BSD 3-Clause"
+  spec.homepage      = "https://github.com/salesforce/BabelBot"
+  spec.license       = "BSD-3-Clause"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
@@ -31,7 +31,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "bin"
-  spec.executables   = ["protocol-droid"]
+  spec.executables   = ["babel-bot"]
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.10"

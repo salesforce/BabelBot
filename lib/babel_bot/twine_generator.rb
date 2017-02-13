@@ -7,7 +7,7 @@
 
 require "twine"
 
-module ProtocolDroid
+module BabelBot
   class TwineGenerator
 
     KEY_ID = "Key"

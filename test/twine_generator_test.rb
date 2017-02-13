@@ -8,7 +8,7 @@
 require "test_helper"
 require "minitest/autorun"
 
-class ProtocolDroid::TwineGeneratorTest < Minitest::Test
+class BabelBot::TwineGeneratorTest < Minitest::Test
   def setup
     @raw_csv = "Key,Comment,en,de,fr\n"
     @tmp_output_path = "tmp/out.twine"
@@ -24,7 +24,7 @@ class ProtocolDroid::TwineGeneratorTest < Minitest::Test
 
     csv = CSV.parse(@raw_csv, {headers: true})
 
-    generator = ProtocolDroid::TwineGenerator.new(csv, @tmp_output_path)
+    generator = BabelBot::TwineGenerator.new(csv, @tmp_output_path)
     generator.generate
 
     loaded_strings_file = Twine::StringsFile.new
@@ -39,7 +39,7 @@ class ProtocolDroid::TwineGeneratorTest < Minitest::Test
 
     csv = CSV.parse(@raw_csv, {headers: true})
 
-    generator = ProtocolDroid::TwineGenerator.new(csv, @tmp_output_path)
+    generator = BabelBot::TwineGenerator.new(csv, @tmp_output_path)
     generator.generate
 
     loaded_strings_file = Twine::StringsFile.new
@@ -66,7 +66,7 @@ class ProtocolDroid::TwineGeneratorTest < Minitest::Test
 
     csv = CSV.parse(@raw_csv, {headers: true})
 
-    generator = ProtocolDroid::TwineGenerator.new(csv, @tmp_output_path)
+    generator = BabelBot::TwineGenerator.new(csv, @tmp_output_path)
     generator.generate
 
     loaded_strings_file = Twine::StringsFile.new
@@ -81,7 +81,7 @@ class ProtocolDroid::TwineGeneratorTest < Minitest::Test
 
     csv = CSV.parse(@raw_csv, {headers: true})
 
-    generator = ProtocolDroid::TwineGenerator.new(csv, @tmp_output_path)
+    generator = BabelBot::TwineGenerator.new(csv, @tmp_output_path)
     generator.generate
 
     loaded_strings_file = Twine::StringsFile.new
