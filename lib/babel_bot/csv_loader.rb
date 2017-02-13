@@ -11,7 +11,7 @@ require "google/api_client/auth/installed_app"
 require "google/api_client/auth/file_storage"
 require "csv"
 
-module ProtocolDroid
+module BabelBot
   class CSVLoader
 
     API_VERSION = "v2"
@@ -69,7 +69,7 @@ module ProtocolDroid
     def client
       @client ||= Google::APIClient.new(
         application_name: @config["googleAppName"] || "String File Generator",
-        application_version: ProtocolDroid::VERSION
+        application_version: BabelBot::VERSION
       )
     end
 

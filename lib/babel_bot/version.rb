@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 #
 # Copyright (c) 2016, salesforce.com, inc.
 # All rights reserved.
@@ -7,7 +5,6 @@
 # For full license text, see LICENSE.txt file in the repo root  or https://opensource.org/licenses/BSD-3-Clause
 #
 
-require "bundler/setup"
-require "protocol_droid"
-
-ProtocolDroid::CLI.run
+module BabelBot
+  VERSION = "1.0.0"
+end

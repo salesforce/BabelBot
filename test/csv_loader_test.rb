@@ -8,7 +8,7 @@
 require "test_helper"
 require "minitest/autorun"
 
-class ProtocolDroid::CSVLoaderTest < Minitest::Test
+class BabelBot::CSVLoaderTest < Minitest::Test
 
   def setup
     @config = {"apiCachePath" => "tmp/test.cache", "fileId" => "config-file-id"}
@@ -55,7 +55,7 @@ CSV
 
     Google::APIClient.stubs(:new).returns(mock_api_client)
 
-    csv = ProtocolDroid::CSVLoader.new(@config).load
+    csv = BabelBot::CSVLoader.new(@config).load
 
     row_one = csv.entries.first
     assert_equal "key-one", row_one["Key"]
